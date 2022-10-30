@@ -1,3 +1,5 @@
+const functions = require("firebase-functions");
+
 const express = require('express')
 
 require('dotenv').config()
@@ -9,6 +11,6 @@ app.use(express.json())
 
 app.use("/api/auth",authRoute)
 
-app.listen(process.env.PORT,() => {
-    console.log(`Backend service is running on  ${process.env.PORT}`)
-})
+
+exports.expressApi = functions.https.onRequest(app)
+
