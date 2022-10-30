@@ -11,7 +11,12 @@ Here is the Entity Relationship Diagramm of the database:
 
 ## Rest Api Service
 Rest Api Service is implemented with `Express` framework for `Node.js`. It is deployed in Firebase as a function. \
-API Endpoint is https://us-central1-metapumpkin.cloudfunctions.net/express.
+API Base Url is https://us-central1-metapumpkin.cloudfunctions.net/expressApi.
+Endpoints Available:
+`api/auth/register` User Anlegen \
+`api/auth/login` Anmelden \
+`api/auth/getuserdetails/:id` User Daten Abfragen \
+
 
 ### Available Services
 
